@@ -2,7 +2,8 @@ name: Getting started
 
 on:
  push:
-  branches: [ main ]
+  branches: 
+  - main 
 
 jobs:
  first_job:
