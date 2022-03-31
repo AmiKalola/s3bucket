@@ -8,7 +8,7 @@ jobs:
  first_job:
   runs-on: self-hosted
   steps:
-   - uses: action/checkout@main
+   - uses: action/checkout@v1
    - name: this stage is for staging the code.
      run: |
         aws s3 ls
