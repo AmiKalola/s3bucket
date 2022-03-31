@@ -6,7 +6,7 @@ on:
 
 jobs:
  first_job:
-  runs-on: self-hosted
+  runs-on: ubuntu-latest
   steps:
    - uses: action/checkout@main
    - name: this stage is for staging the code.
