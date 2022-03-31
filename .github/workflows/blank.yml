@@ -11,6 +11,7 @@ jobs:
    - uses: action/checkout@main
    - name: this stage is for staging the code.
      run: |
-         echo "Staging process start...."  
-         aws s3 cp index.html s3://forlearn
-  
+        aws s3 ls
+        ls
+        pwd
+        aws s3 cp index.html s3://fproductionbucket        
