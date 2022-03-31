@@ -9,7 +9,8 @@ jobs:
  first_job:
   runs-on: self-hosted
   steps:
-   #- uses: action/checkout@main
+   - name: checkout
+   - uses: action/checkout@v1
    - name: this stage is for staging the code.
      run: 
-        aws s3 cp index.html s3://"${{secrets.AWS_S3_BUCKET}}"
+        aws s3 cp style.html s3://"${{secrets.AWS_S3_BUCKET}}"
