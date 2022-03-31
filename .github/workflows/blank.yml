@@ -11,8 +11,5 @@ jobs:
   steps:
    #- uses: action/checkout@main
    - name: this stage is for staging the code.
-     run: |
-        aws s3
-        ls
-        pwd
+     run: 
         aws s3 cp index.html s3://"${{secrets.AWS_S3_BUCKET}}"
